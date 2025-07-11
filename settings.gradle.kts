@@ -1,1 +1,1 @@
-rootProject.name = "ktor-sample"
+rootProject.name = "project-kotlin-workshop5"

@@ -1,0 +1,38 @@
+### สร้างโพสต์ใหม่
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "title": "My first post",
+  "content": "Hello world!"
+}
+
+### ดึงโพสต์ทั้งหมด
+GET http://localhost:8080/posts
+
+### ดึงโพสต์ด้วย id = 1
+GET http://localhost:8080/posts/1
+
+### แก้ไขโพสต์ id = 1
+PUT http://localhost:8080/posts/1
+Content-Type: application/json
+
+{
+  "title": "Updated post title",
+  "content": "Updated content here."
+}
+
+### ลบโพสต์ id = 1
+DELETE http://localhost:8080/posts/1
+
+### สร้างคอมเมนต์ในโพสต์ id = 2
+POST http://localhost:8080/posts/2/comments
+Content-Type: application/json
+
+{
+  "authorName": "Alice",
+  "content": "Great post!"
+}
+
+### ดึงโพสต์ id = 2 พร้อมคอมเมนต์
+GET http://localhost:8080/posts/2

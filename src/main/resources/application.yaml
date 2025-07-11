@@ -1,6 +1,8 @@
 ktor:
   application:
     modules:
-      - com.nattharin.ApplicationKt.module
+      - com.app.ApplicationKt.module
   deployment:
     port: 8080
+    watch:
+      - classes
