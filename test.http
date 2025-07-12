@@ -10,11 +10,11 @@ Content-Type: application/json
 ### ดึงโพสต์ทั้งหมด
 GET http://localhost:8080/posts
 
-### ดึงโพสต์ด้วย id = 1
-GET http://localhost:8080/posts/1
+### ดึงโพสต์ด้วย id = 3
+GET http://localhost:8080/posts/3
 
-### แก้ไขโพสต์ id = 1
-PUT http://localhost:8080/posts/1
+### แก้ไขโพสต์ id = 3
+PUT http://localhost:8080/posts/3
 Content-Type: application/json
 
 
@@ -23,10 +23,10 @@ Content-Type: application/json
   "content": "Updated content here."
 }
 
-### ลบโพสต์ id = 1
+### ลบโพสต์ id
 DELETE http://localhost:8080/posts/1
 
-### สร้างคอมเมนต์ในโพสต์ id = 2
+### สร้างคอมเมนต์ในโพสต์ id
 POST http://localhost:8080/posts/2/comments
 Content-Type: application/json
 
@@ -35,5 +35,5 @@ Content-Type: application/json
   "content": "Great post!"
 }
 
-### ดึงโพสต์ id = 2 พร้อมคอมเมนต์
+### ดึงโพสต์ พร้อมคอมเมนต์
 GET http://localhost:8080/posts/2
